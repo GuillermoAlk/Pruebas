@@ -1,0 +1,180 @@
+/*body{
+    margin: 0;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+*/.titulos {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10rem auto;
+}
+
+*/footer {
+    background-color: rgb(110, 193, 221);
+    color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+/*.login-form{
+    width: 20%;
+    margin: 0 auto;
+    background-color: lightskyblue;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 35px 30px 0.5rem rgba(0, 0, 0, 0.189);
+}
+
+.btn-left {
+    float: left;
+}
+
+.btn-right {
+    float: right;
+}
+
+form {
+    margin: 0 auto;
+}
+
+/*article {
+    text-align: center;
+    display: flexbox;
+}
+
+/*article {
+    padding: auto 1rem;
+    display: flexbox;
+}
+
+article div:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+article div {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    background-color: lightblue;
+    margin: auto 25rem;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+article div form button {
+    background-color: blue;
+    text-align: center;
+}
+
+/*@media only screen and (min-width: 768px)/*sirve como punto de ruptura para cambiar el diseño cuando la panatalla pasa el valor
+en px que se le marca */
+
+body {
+    background-color: #ffffff;
+    background-image: radial-gradient(#0f25ec 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+    
+}
+
+/*.form-container {
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.228);/*primero eje x, luego eje y, blur(sombra), sprit y color rgba(red,green,blue,opacity)*/
+   /* background-color: lightskyblue;/*
+    text-align: center;/*
+    display: flex;/*con esta propiedad activamos flexbox para un diseño responsive*/
+    /*flex-direction:column;/*ordena los elementos en columnas*/
+    /*flex-direction: row /* los ordena en una linea uno al lado del otro*/
+    /*flex-wrap: wrap;/*esta propiedad de flexbox le dice que hacer con los items
+    en caso de que no haya lugar para las cajas pero que respeten sus 
+    tamaños para no perder informacion*/
+    /*flex-flow: column;/*esta propiedad resume el flex direction y el wrap*/
+   /* justify-content: center;/*acomoda los elementos al medio*/
+    /*justify-content: space-between;/*deja un espacio entre las cajas*/
+    /*justify-content: space-around;/*deja el espacio alrededor de toda la caja*/
+    /*height: 420px;
+    gap: 0.5rem;
+    /*align-items: stretch;/*trata de ocupar todo el espacio que le queda disponible*/
+    /*align-items: baseline;/*ordena a todos los elementos en la misma linea sin importar su caracteristica diferente*/
+/*}
+
+/*.box{
+    margin: 15px;
+    width: 340px;
+    flex-grow: 1;/*se pueden cambiar los tamaños que ocupa cada caja a traves de este estilo*/
+    /*order: 1;/*el order sirve para darle un orden a cada elemento e intercambiar facilmente entre ellos*/
+   /* flex-shrink: 0;/*permite detener la posibilidad de que un elemento se achique
+    mas alla del ancho especificado, por lo cual si el resto de elementos se tiene que achicar
+    para respetar el tamaño del que tiene el shrink entonces lo haran*/
+/*}
+*/
+.grid{
+    display: grid;/*sirve para marcar el display como una grilla*/
+    grid-template-columns: 1fr 1fr 1fr;/*o en vez de tantos fr poner repeat(numero_de_repeticiones, medida)*//*sirve para marcar las columnas de nuestra grilla*/
+    /*grid-template-rows: minmax(valor minimo, valor maximo)/*el minmax()sirve para marcar los valores minimos y maximos que
+    ocupara nuestro div en el grid;/*sirve para marcar las filas de nuestra grilla*/
+    gap: 10px;/*sirve para la separacion de elementos dentro de nuestra grilla*/
+    align-items: center;
+}
+
+.form{
+    background-color: lightskyblue;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    gap: 20px;
+    grid-column: 2;/*con esto le indico que quiero que se centre en la 2da fraccion de mi grid*/
+    /*grid-row: 2;/*con esto lo mismo pero la fila*/
+    /*grid-auto-rows: valor;/*le agrega un tamaño automatico a las filas*/
+}
+
+.grilla-gnrl{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-rows: maxmin(auto, auto);
+}
+
+.box{
+    margin: 5px auto;
+    gap: 5px;
+}
+
+/*@media (max-width: 785px) {
+    #contenedor {
+        grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
+   /* }
+
+  /*  form {
+        grid-column: 1; /* El formulario ocupa toda la columna */
+   /*     width: 100%;
+ /*   }
+
+   /* footer.pie-pagina {
+        grid-column: 1; /* Ocupa toda la columna en pantallas pequeñas */
+   /*     width: 100%; /* Asegura que ocupe todo el ancho */
+/*    }
+}/*
+
+footer{
+        grid-column: 1 / span 3; /* Ocupa desde la primera hasta la tercera columna */
+/*}
